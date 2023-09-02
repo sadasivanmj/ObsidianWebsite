@@ -1,18 +1,5 @@
 # Publish your Obsidian Notes
 
-(MkDocs template)
-
-Would you like to take _some_ of your notes in [Obsidian](https://obsidian.md/) and make it public?
-
-This template gives you an easy (and automated) way to publish your Obsidian notes on your Github pages.
-
-With this template, you get these **out-of-the-box**:
-
-- an awesome website based on Material theme, complete with a search bar (Checkout this template repo published [here](https://jobindjohn.github.io/obsidian-publish-mkdocs/))
-![](2021-11-22-22-49-26.png)
-- get the Obsidian/Roam style `[[wikilinks]]` from your vault in your published notes
-- Toggle between light and dark mode
-
 ## Quick start
 
 1. Create a **new github repository using this template**. Click the green button at the top or use [this link](https://github.com/jobindjohn/obsidian-publish-mkdocs/generate). 
@@ -29,7 +16,6 @@ With this template, you get these **out-of-the-box**:
 
 ![](2021-11-22-22-52-49.png)
 
-**Not working for you?** Open an [issue](https://github.com/jobindjohn/obsidian-publish-mkdocs/issues/new/choose) and let me know what went wrong.
 
 ## Configuring your website
 
