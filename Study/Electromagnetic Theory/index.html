@@ -1,0 +1,985 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Features/Text%20Formatting/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.6">
+    
+    
+      
+        <title>Theory - obsidian-mkdocs template</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0e669242.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#theory" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="obsidian-mkdocs template" class="md-header__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Theory
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="obsidian-mkdocs template" class="md-nav__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    obsidian-mkdocs template
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obsidian Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Features
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Features/LaTeX%20Math%20Support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LaTeX Math Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Features/Mermaid%20Diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mermaid diagrams
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Features/Text%20Formatting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text Formatting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Study
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Study
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Theory
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Theory
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#maxwells-equation-in-matter" class="md-nav__link">
+    Maxwells equation in Matter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conservation-laws" class="md-nav__link">
+    Conservation Laws
+  </a>
+  
+    <nav class="md-nav" aria-label="Conservation Laws">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#momentum" class="md-nav__link">
+    Momentum
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electromagnetic-waves" class="md-nav__link">
+    Electromagnetic Waves
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electrodynamics-and-relativity" class="md-nav__link">
+    Electrodynamics and Relativity
+  </a>
+  
+    <nav class="md-nav" aria-label="Electrodynamics and Relativity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relativity" class="md-nav__link">
+    Relativity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lorentz-transformation" class="md-nav__link">
+    Lorentz transformation
+  </a>
+  
+    <nav class="md-nav" aria-label="Lorentz transformation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addition-of-velocity" class="md-nav__link">
+    Addition of velocity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-of-space-time" class="md-nav__link">
+    Structure of Space time
+  </a>
+  
+    <nav class="md-nav" aria-label="Structure of Space time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#four-vector" class="md-nav__link">
+    Four Vector
+  </a>
+  
+    <nav class="md-nav" aria-label="Four Vector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#four-vector-dot-product" class="md-nav__link">
+    Four Vector Dot Product
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displacement-four-vector" class="md-nav__link">
+    Displacement four vector
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#maxwells-equation-in-matter" class="md-nav__link">
+    Maxwells equation in Matter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conservation-laws" class="md-nav__link">
+    Conservation Laws
+  </a>
+  
+    <nav class="md-nav" aria-label="Conservation Laws">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#momentum" class="md-nav__link">
+    Momentum
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electromagnetic-waves" class="md-nav__link">
+    Electromagnetic Waves
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electrodynamics-and-relativity" class="md-nav__link">
+    Electrodynamics and Relativity
+  </a>
+  
+    <nav class="md-nav" aria-label="Electrodynamics and Relativity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relativity" class="md-nav__link">
+    Relativity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lorentz-transformation" class="md-nav__link">
+    Lorentz transformation
+  </a>
+  
+    <nav class="md-nav" aria-label="Lorentz transformation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addition-of-velocity" class="md-nav__link">
+    Addition of velocity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-of-space-time" class="md-nav__link">
+    Structure of Space time
+  </a>
+  
+    <nav class="md-nav" aria-label="Structure of Space time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#four-vector" class="md-nav__link">
+    Four Vector
+  </a>
+  
+    <nav class="md-nav" aria-label="Four Vector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#four-vector-dot-product" class="md-nav__link">
+    Four Vector Dot Product
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displacement-four-vector" class="md-nav__link">
+    Displacement four vector
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="theory">Theory<a class="headerlink" href="#theory" title="Permanent link">&para;</a></h1>
+<p><mark>Insert Second Sem Concepts</mark></p>
+<h2 id="maxwells-equation-in-matter">Maxwells equation in Matter<a class="headerlink" href="#maxwells-equation-in-matter" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>[!REVIEW]
+1. <span class="arithmatex">\(\nabla \cdot E = \frac{\rho}{\epsilon_0}\)</span>
+2. <span class="arithmatex">\(\nabla \cdot B = 0\)</span>
+3. <span class="arithmatex">\(\nabla \times E = -\frac{dB}{dt}\)</span>
+4. <span class="arithmatex">\(\nabla \times B = \mu_0 J + \mu_0 \epsilon_0 \frac{dE}{dt}\)</span></p>
+</blockquote>
+<p>Inside a polarized material there will be accumulation of bound charge and current.
+In static case
+    <span class="arithmatex">\(\rho_b = -\nabla \cdot P\)</span>
+    <span class="arithmatex">\(J_b = \nabla \times M\)</span>
+In non static case there will also be a polarization current due to any change in electric polarization
+    <span class="arithmatex">\(J_p = \frac{\partial P}{\partial t}\)</span>
+    also it is consistent with continuity equation <span class="arithmatex">\(\nabla \cdot J = \frac{\partial (\nabla \cdot P)}{\partial t} = -\frac{\partial \rho_b}{\partial t}\)</span>
+Now we have 
+    <span class="arithmatex">\(\rho = \rho_f + \rho_b = \rho_f - \nabla \cdot P\)</span>
+and
+    <span class="arithmatex">\(J=J_f + J_b + J_p = J_f + \nabla \times M + \frac{\partial P}{\partial t}\)</span>
+Substituting  this in to maxwells equation 1 we get
+    <span class="arithmatex">\(\nabla \cdot E = \frac{\rho_f + \rho_b}{\epsilon_0} = \frac{1}{\epsilon_0}(\rho_f - \nabla \cdot P)\)</span>
+    i.e <span class="arithmatex">\(\nabla \cdot \epsilon_0 E + \nabla \cdot P = \rho_f\)</span>
+    <span class="arithmatex">\(\implies \nabla \cdot (\epsilon_0 E + P) = \rho_f\)</span>
+    Where as <span class="arithmatex">\(D = \epsilon_0 E + P\)</span>
+    <span class="arithmatex">\(\nabla \cdot D = \rho_f\)</span></p>
+<p>And Similarly
+    Substituting Eq of J in Eq 4 of review we get
+     <span class="arithmatex">\(\nabla \times H = J_f + \frac{dD}{dt}\)</span>
+     where <span class="arithmatex">\(H = \frac{B}{\mu_0} - M\)</span></p>
+<blockquote>
+<p>[!IMPORTANT]
+1. <span class="arithmatex">\(\nabla \cdot D = \rho_f\)</span>
+2. <span class="arithmatex">\(\nabla \cdot B = 0\)</span>
+3. <span class="arithmatex">\(\nabla \times E = -\frac{dB}{dt}\)</span>
+4. <span class="arithmatex">\(\nabla \times H = J_f + \frac{dD}{dt}\)</span></p>
+</blockquote>
+<h2 id="conservation-laws">Conservation Laws<a class="headerlink" href="#conservation-laws" title="Permanent link">&para;</a></h2>
+<p><mark>LEAVE SPACE FOR COMPLETION</mark></p>
+<h3 id="momentum">Momentum<a class="headerlink" href="#momentum" title="Permanent link">&para;</a></h3>
+<h2 id="electromagnetic-waves">Electromagnetic Waves<a class="headerlink" href="#electromagnetic-waves" title="Permanent link">&para;</a></h2>
+<p>What is a [[Wave]] ?</p>
+<blockquote>
+<p>Wave is a disturbance of a continues medium that propagates with a fixed shape at a continues velocity</p>
+</blockquote>
+<h2 id="electrodynamics-and-relativity">Electrodynamics and Relativity<a class="headerlink" href="#electrodynamics-and-relativity" title="Permanent link">&para;</a></h2>
+<h3 id="relativity">Relativity<a class="headerlink" href="#relativity" title="Permanent link">&para;</a></h3>
+<p>[[Relativity]]</p>
+<blockquote>
+<p>[!Einsteins Postulates]
+1. Laws of physics apply in all inertial frames
+2. Speed of light is constant</p>
+</blockquote>
+<p>Inference of Einsteins postulates
+    - <strong>Simultaneity</strong> : Lack there of 
+    - <strong>Time Dilation</strong> : <span class="arithmatex">\(t' = \frac{t}{\gamma}\)</span>
+    - Length Contraction <span class="arithmatex">\(l'=\gamma l\)</span></p>
+<h3 id="lorentz-transformation">Lorentz transformation<a class="headerlink" href="#lorentz-transformation" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(x'=\gamma (x-\frac{v}{t})\)</span>
+<span class="arithmatex">\(y'=y\)</span>
+<span class="arithmatex">\(z'=z\)</span>
+<span class="arithmatex">\(t'=\gamma (t-\frac{vx}{c^2})\)</span></p>
+<h4 id="addition-of-velocity">Addition of velocity<a class="headerlink" href="#addition-of-velocity" title="Permanent link">&para;</a></h4>
+<p><span class="arithmatex">\(u'=\frac{u-v}{1-\frac{uv}{c^2}}\)</span></p>
+<h3 id="structure-of-space-time">Structure of Space time<a class="headerlink" href="#structure-of-space-time" title="Permanent link">&para;</a></h3>
+<h4 id="four-vector">Four Vector<a class="headerlink" href="#four-vector" title="Permanent link">&para;</a></h4>
+<p><span class="arithmatex">\(\bar{x^0} = \gamma(x^0-\beta x^1)\)</span>
+<span class="arithmatex">\(\bar{x^1} = \gamma(x^1-\beta x^0)\)</span>
+<span class="arithmatex">\(\bar{x^2} = x^2\)</span>
+<span class="arithmatex">\(\bar{x^3}= x^3\)</span></p>
+<p>$$
+\begin{bmatrix}
+\bar{x^0} \
+\bar{x^1} \
+\bar{x^2} \
+\bar{x^3}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma &amp; -\gamma \beta &amp; 0 &amp; 0\
+-\gamma \beta &amp; \gamma &amp; 0 &amp; 0\
+0 &amp; 0&amp; 1 &amp; 0\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+x^0\
+x^1\
+x^2\
+x^3
+\end{bmatrix}
+$$
+It can be written as <span class="arithmatex">\(\bar{x^\mu}=\sum_{\nu=0}^{3} \Lambda_{\nu}^{\mu} x^\nu\)</span>
+where <span class="arithmatex">\(\mu\)</span> - row <span class="arithmatex">\(\nu\)</span> - column
+Generally <span class="arithmatex">\(\bar{a^\mu}=\sum_{\nu=0}^{3} \Lambda_{\nu}^{\mu} a^\nu\)</span></p>
+<h5 id="four-vector-dot-product">Four Vector Dot Product<a class="headerlink" href="#four-vector-dot-product" title="Permanent link">&para;</a></h5>
+<p><span class="arithmatex">\(a^\mu\)</span> - Contravarient = <span class="arithmatex">\((a^0,a^1,a^2,a^3)\)</span>
+<span class="arithmatex">\(a_\mu\)</span> - Covarient = <span class="arithmatex">\((a_0,a_1,a_2,a_3)\)</span> = <span class="arithmatex">\((-a^0,a^1,a^2,a^3)\)</span>
+<span class="arithmatex">\(a^{\mu}b_{\mu} = -a^0b^0 +a^1b^1+a^2b^2+a^3b^3\)</span></p>
+<blockquote>
+<p>[!Definition]
+<a href="https://en.wikipedia.org/wiki/Rapidity"><strong>Rapidity</strong></a> : In <a href="https://en.wikipedia.org/wiki/Theory_of_relativity" title="Theory of relativity">relativity</a>, <strong>rapidity</strong> is commonly used as a measure for <a href="https://en.wikipedia.org/wiki/Relativistic_velocity" title="Relativistic velocity">relativistic velocity</a>. Mathematically, rapidity can be defined as the <a href="https://en.wikipedia.org/wiki/Hyperbolic_angle" title="Hyperbolic angle">hyperbolic angle</a> that differentiates two <a href="https://en.wikipedia.org/wiki/Frames_of_reference" title="Frames of reference">frames of reference</a> in relative motion, each frame being associated with <a href="https://en.wikipedia.org/wiki/Distance" title="Distance">distance</a> and <a href="https://en.wikipedia.org/wiki/Time" title="Time">time</a> coordinates.</p>
+</blockquote>
+<p><span class="arithmatex">\(a^{\mu}a_{\mu} &gt; 0\)</span> - Spacelike
+<span class="arithmatex">\(a^{\mu}a_{\mu} &lt; 0\)</span> - Timelike
+<span class="arithmatex">\(a^{\mu}a_{\mu} = 0\)</span> - Light like</p>
+<h4 id="displacement-four-vector">Displacement four vector<a class="headerlink" href="#displacement-four-vector" title="Permanent link">&para;</a></h4>
+<p>Say and event 'A' occurs at <span class="arithmatex">\((x^0_A,x^1_A,x^2_A,x^3_A)\)</span> and B at <span class="arithmatex">\((x^0_B,x^1_B,x^2_B,^3_B)\)</span>
+Interval between Events I = <span class="arithmatex">\((\Delta x)^\mu (\Delta x)_\mu = (\Delta x^0)^2 + (\Delta x^1)^2 + (\Delta x^2)^2 + (\Delta x^3)^2 = -c^2t^2 +d^2\)</span> 
+Where <span class="arithmatex">\(-c^2t^2\)</span> is the time interval and <span class="arithmatex">\(d^2\)</span> is the distance interval (?)</p>
+<h1 id="theory_1">Theory<a class="headerlink" href="#theory_1" title="Permanent link">&para;</a></h1>
+<p><mark>Insert Second Sem Concepts</mark></p>
+<h2 id="maxwells-equation-in-matter_1">Maxwells equation in Matter<a class="headerlink" href="#maxwells-equation-in-matter_1" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>[!REVIEW]
+1. <span class="arithmatex">\(\nabla \cdot E = \frac{\rho}{\epsilon_0}\)</span>
+2. <span class="arithmatex">\(\nabla \cdot B = 0\)</span>
+3. <span class="arithmatex">\(\nabla \times E = -\frac{dB}{dt}\)</span>
+4. <span class="arithmatex">\(\nabla \times B = \mu_0 J + \mu_0 \epsilon_0 \frac{dE}{dt}\)</span></p>
+</blockquote>
+<p>Inside a polarized material there will be accumulation of bound charge and current.
+In static case
+    <span class="arithmatex">\(\rho_b = -\nabla \cdot P\)</span>
+    <span class="arithmatex">\(J_b = \nabla \times M\)</span>
+In non static case there will also be a polarization current due to any change in electric polarization
+    <span class="arithmatex">\(J_p = \frac{\partial P}{\partial t}\)</span>
+    also it is consistent with continuity equation <span class="arithmatex">\(\nabla \cdot J = \frac{\partial (\nabla \cdot P)}{\partial t} = -\frac{\partial \rho_b}{\partial t}\)</span>
+Now we have 
+    <span class="arithmatex">\(\rho = \rho_f + \rho_b = \rho_f - \nabla \cdot P\)</span>
+and
+    <span class="arithmatex">\(J=J_f + J_b + J_p = J_f + \nabla \times M + \frac{\partial P}{\partial t}\)</span>
+Substituting  this in to maxwells equation 1 we get
+    <span class="arithmatex">\(\nabla \cdot E = \frac{\rho_f + \rho_b}{\epsilon_0} = \frac{1}{\epsilon_0}(\rho_f - \nabla \cdot P)\)</span>
+    i.e <span class="arithmatex">\(\nabla \cdot \epsilon_0 E + \nabla \cdot P = \rho_f\)</span>
+    <span class="arithmatex">\(\implies \nabla \cdot (\epsilon_0 E + P) = \rho_f\)</span>
+    Where as <span class="arithmatex">\(D = \epsilon_0 E + P\)</span>
+    <span class="arithmatex">\(\nabla \cdot D = \rho_f\)</span></p>
+<p>And Similarly
+    Substituting Eq of J in Eq 4 of review we get
+     <span class="arithmatex">\(\nabla \times H = J_f + \frac{dD}{dt}\)</span>
+     where <span class="arithmatex">\(H = \frac{B}{\mu_0} - M\)</span></p>
+<blockquote>
+<p>[!IMPORTANT]
+1. <span class="arithmatex">\(\nabla \cdot D = \rho_f\)</span>
+2. <span class="arithmatex">\(\nabla \cdot B = 0\)</span>
+3. <span class="arithmatex">\(\nabla \times E = -\frac{dB}{dt}\)</span>
+4. <span class="arithmatex">\(\nabla \times H = J_f + \frac{dD}{dt}\)</span></p>
+</blockquote>
+<h2 id="conservation-laws_1">Conservation Laws<a class="headerlink" href="#conservation-laws_1" title="Permanent link">&para;</a></h2>
+<p><mark>LEAVE SPACE FOR COMPLETION</mark></p>
+<h3 id="momentum_1">Momentum<a class="headerlink" href="#momentum_1" title="Permanent link">&para;</a></h3>
+<h2 id="electromagnetic-waves_1">Electromagnetic Waves<a class="headerlink" href="#electromagnetic-waves_1" title="Permanent link">&para;</a></h2>
+<p>What is a [[Wave]] ?</p>
+<blockquote>
+<p>Wave is a disturbance of a continues medium that propagates with a fixed shape at a continues velocity</p>
+</blockquote>
+<h2 id="electrodynamics-and-relativity_1">Electrodynamics and Relativity<a class="headerlink" href="#electrodynamics-and-relativity_1" title="Permanent link">&para;</a></h2>
+<h3 id="relativity_1">Relativity<a class="headerlink" href="#relativity_1" title="Permanent link">&para;</a></h3>
+<p>[[Relativity]]</p>
+<blockquote>
+<p>[!Einsteins Postulates]
+1. Laws of physics apply in all inertial frames
+2. Speed of light is constant</p>
+</blockquote>
+<p>Inference of Einsteins postulates
+    - <strong>Simultaneity</strong> : Lack there of 
+    - <strong>Time Dilation</strong> : <span class="arithmatex">\(t' = \frac{t}{\gamma}\)</span>
+    - Length Contraction <span class="arithmatex">\(l'=\gamma l\)</span></p>
+<h3 id="lorentz-transformation_1">Lorentz transformation<a class="headerlink" href="#lorentz-transformation_1" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(x'=\gamma (x-\frac{v}{t})\)</span>
+<span class="arithmatex">\(y'=y\)</span>
+<span class="arithmatex">\(z'=z\)</span>
+<span class="arithmatex">\(t'=\gamma (t-\frac{vx}{c^2})\)</span></p>
+<h4 id="addition-of-velocity_1">Addition of velocity<a class="headerlink" href="#addition-of-velocity_1" title="Permanent link">&para;</a></h4>
+<p><span class="arithmatex">\(u'=\frac{u-v}{1-\frac{uv}{c^2}}\)</span></p>
+<h3 id="structure-of-space-time_1">Structure of Space time<a class="headerlink" href="#structure-of-space-time_1" title="Permanent link">&para;</a></h3>
+<h4 id="four-vector_1">Four Vector<a class="headerlink" href="#four-vector_1" title="Permanent link">&para;</a></h4>
+<p><span class="arithmatex">\(\bar{x^0} = \gamma(x^0-\beta x^1)\)</span>
+<span class="arithmatex">\(\bar{x^1} = \gamma(x^1-\beta x^0)\)</span>
+<span class="arithmatex">\(\bar{x^2} = x^2\)</span>
+<span class="arithmatex">\(\bar{x^3}= x^3\)</span></p>
+<p>$$
+\begin{bmatrix}
+\bar{x^0} \
+\bar{x^1} \
+\bar{x^2} \
+\bar{x^3}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\gamma &amp; -\gamma \beta &amp; 0 &amp; 0\
+-\gamma \beta &amp; \gamma &amp; 0 &amp; 0\
+0 &amp; 0&amp; 1 &amp; 0\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+x^0\
+x^1\
+x^2\
+x^3
+\end{bmatrix}
+$$
+It can be written as <span class="arithmatex">\(\bar{x^\mu}=\sum_{\nu=0}^{3} \Lambda_{\nu}^{\mu} x^\nu\)</span>
+where <span class="arithmatex">\(\mu\)</span> - row <span class="arithmatex">\(\nu\)</span> - column
+Generally <span class="arithmatex">\(\bar{a^\mu}=\sum_{\nu=0}^{3} \Lambda_{\nu}^{\mu} a^\nu\)</span></p>
+<h5 id="four-vector-dot-product_1">Four Vector Dot Product<a class="headerlink" href="#four-vector-dot-product_1" title="Permanent link">&para;</a></h5>
+<p><span class="arithmatex">\(a^\mu\)</span> - Contravarient = <span class="arithmatex">\((a^0,a^1,a^2,a^3)\)</span>
+<span class="arithmatex">\(a_\mu\)</span> - Covarient = <span class="arithmatex">\((a_0,a_1,a_2,a_3)\)</span> = <span class="arithmatex">\((-a^0,a^1,a^2,a^3)\)</span>
+<span class="arithmatex">\(a^{\mu}b_{\mu} = -a^0b^0 +a^1b^1+a^2b^2+a^3b^3\)</span></p>
+<blockquote>
+<p>[!Definition]
+<a href="https://en.wikipedia.org/wiki/Rapidity"><strong>Rapidity</strong></a> : In <a href="https://en.wikipedia.org/wiki/Theory_of_relativity" title="Theory of relativity">relativity</a>, <strong>rapidity</strong> is commonly used as a measure for <a href="https://en.wikipedia.org/wiki/Relativistic_velocity" title="Relativistic velocity">relativistic velocity</a>. Mathematically, rapidity can be defined as the <a href="https://en.wikipedia.org/wiki/Hyperbolic_angle" title="Hyperbolic angle">hyperbolic angle</a> that differentiates two <a href="https://en.wikipedia.org/wiki/Frames_of_reference" title="Frames of reference">frames of reference</a> in relative motion, each frame being associated with <a href="https://en.wikipedia.org/wiki/Distance" title="Distance">distance</a> and <a href="https://en.wikipedia.org/wiki/Time" title="Time">time</a> coordinates.</p>
+</blockquote>
+<p><span class="arithmatex">\(a^{\mu}a_{\mu} &gt; 0\)</span> - Spacelike
+<span class="arithmatex">\(a^{\mu}a_{\mu} &lt; 0\)</span> - Timelike
+<span class="arithmatex">\(a^{\mu}a_{\mu} = 0\)</span> - Light like</p>
+<h4 id="displacement-four-vector_1">Displacement four vector<a class="headerlink" href="#displacement-four-vector_1" title="Permanent link">&para;</a></h4>
+<p>Say and event 'A' occurs at <span class="arithmatex">\((x^0_A,x^1_A,x^2_A,x^3_A)\)</span> and B at <span class="arithmatex">\((x^0_B,x^1_B,x^2_B,^3_B)\)</span>
+Interval between Events I = <span class="arithmatex">\((\Delta x)^\mu (\Delta x)_\mu = (\Delta x^0)^2 + (\Delta x^1)^2 + (\Delta x^2)^2 + (\Delta x^3)^2 = -c^2t^2 +d^2\)</span> 
+Where <span class="arithmatex">\(-c^2t^2\)</span> is the time interval and <span class="arithmatex">\(d^2\)</span> is the distance interval (?)</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.78eede0e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
